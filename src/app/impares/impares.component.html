@@ -1,0 +1,10 @@
+<h1>Números Impares</h1>
+<div id="impares" style="overflow-y: scroll; height:150px;">
+  <p *ngFor="let numero of numeros">
+    {{numero}}
+  </p>
+</div>
+
+<p *ngIf="numeros$ !=null">
+    {{ numeros$ | async | json }}
+  </p>

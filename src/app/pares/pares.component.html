@@ -1,0 +1,10 @@
+<h1>Números pares</h1>
+<div id="" style="overflow-y: scroll; height:150px;">
+  <p *ngFor="let numero of numeros">
+    {{numero}}
+  </p>
+</div>
+
+<p>
+    {{ numeros$ | async | json }}
+  </p>
